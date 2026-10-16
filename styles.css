@@ -382,3 +382,39 @@ strong { color: var(--ink); font-weight: 600; }
   .header-actions .btn-small { display: none; }
   .hero-cta .btn { flex: 1 1 100%; }
 }
+
+/* ==========================================================================
+   Project visuals, education and certifications
+   ========================================================================== */
+.project-links { display: flex; flex-wrap: wrap; gap: 0 1.5rem; }
+
+.media-reco svg, .media-line svg { width: 70%; max-width: 220px; overflow: visible; }
+.media-reco circle { fill: var(--accent); opacity: .35; }
+.media-reco circle.hit { opacity: .9; }
+.media-reco path { fill: none; stroke: var(--accent); stroke-width: 1.5; opacity: .5; }
+.media-line svg { height: 110px; }
+.media-line .hist { fill: none; stroke: var(--ink); stroke-width: 2; vector-effect: non-scaling-stroke; stroke-linejoin: round; }
+.media-line .fcst { fill: none; stroke: var(--accent); stroke-width: 2; stroke-dasharray: 5 4; vector-effect: non-scaling-stroke; }
+.media-line .band { fill: var(--accent); opacity: .15; }
+
+.edu-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+.edu-grid .timeline li { grid-template-columns: 140px 1fr; }
+.inline-link { color: var(--ink); font-weight: 500; text-decoration: none; white-space: nowrap; margin-left: .25rem; }
+.inline-link:hover { color: var(--accent); }
+
+.certs ul { list-style: none; margin: .9rem 0 0; padding: 0; }
+.certs li {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+  padding: .85rem 0; border-top: 1px solid var(--line); color: var(--ink);
+}
+.certs li:last-child { border-bottom: 1px solid var(--line); }
+.certs a { color: var(--ink); text-decoration: none; font-weight: 500; }
+.certs a:hover { color: var(--accent); }
+.certs .by { font: 500 .75rem/1.4 var(--mono); color: var(--muted); text-align: right; flex-shrink: 0; }
+
+@media (max-width: 960px) {
+  .edu-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .edu-grid .timeline li { grid-template-columns: 1fr; }
+}

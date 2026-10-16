@@ -10,13 +10,16 @@ thanks.html    fallback "message sent" page
 assets/        favicon, logos, your photo and résumé PDF
 ```
 
-## Before you publish, replace these
+## Updating content
 
-1. **Résumé PDF**: save it as `assets/Paul_Muniu_Resume.pdf`.
-2. **Photo** (optional): save it as `assets/portrait.jpg`. Then, in `index.html`, uncomment the `<img>` line in the portrait card and delete the `PM` monogram line.
-3. **Third project card**: it's marked `PLACEHOLDER`. Put a real Power BI or Streamlit project there.
-4. **Experience**: the two entries marked `PLACEHOLDER` need your real roles and education.
-5. **LinkedIn**: put your profile URL in the Contact section.
+- **Résumé:** `assets/Paul_Muniu_Resume.pdf` is the web copy. Its References section was replaced with
+  "Available on request" so your referee's contact details aren't public. When you update your CV, remove
+  the referee again before replacing this file.
+- **Photo** (optional): save it as `assets/portrait.jpg`. Then, in `index.html`, uncomment the `<img>` line in the
+  portrait card and delete the `PM` monogram line.
+- **Projects, experience, education:** edit the matching section in `index.html`. Each card or timeline entry
+  is a self-contained block, so copy one to add another.
+- Netlify's free plan charges credits per deploy, so batch your edits into one push.
 
 ## Publishing on Netlify
 
